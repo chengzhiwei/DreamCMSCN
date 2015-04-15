@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <name>PLG_UEDITOR_NAME</name>
+    <author>Dream CMS</author>
+    <contact>Dream CMS@***.com</contact>
+    <desc>PLG_UEDITOR_DESC</desc>
+    <thumb></thumb>
+    <vhooks>
+        <vhook>
+            <name>PLUGIN_VHOOK_UEDITOR</name>
+            <class>Vhook</class>
+            <method>ueditor</method>
+            <hookpos></hookpos>
+            <res>
+                <js>ueditor.all.min.js,lang/zh-cn/zh-cn.js</js>
+                <css></css>
+            </res>
+            
+        </vhook>
+    </vhooks>
+    
+</root>
