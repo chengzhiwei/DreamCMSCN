@@ -27,11 +27,6 @@ class PluginController extends \Auth\Controller\AuthbaseController
         {
             if (!in_array($f, $filter))
             {
-                $lang_file = 'Lang/Plugin/' . C('DEFAULT_LANG') . '/' . $f . '/' . strtolower($f) . '.php';
-                if (file_exists($lang_file))
-                {
-                    L(include($lang_file));
-                }
                 $xml = simplexml_load_file('Plugin/' . $f . '/config.xml');
                 $xml->plugin = $f;
                 $plugin_arr[] = $xml;

@@ -42,12 +42,12 @@
                                     <div>
 
                                         <img class="pull-left   no-hover" src="<?php echo __ROOT__ ?>/Template/Plugin/<?php echo (string) $p->plugin ?>/Res/thumb.png" />
-                                        <a href="#" class="user"> <?php echo L((String) $p->name); ?> </a>
+                                        <a href="#" class="user"> <?php echo (String) $p->name; ?> </a>
                                         作者：<?php echo $p_arr['author'] ?> EMAIL：<a href="mailto"><?php echo $p_arr['contact'] ?></a>
 
 
                                         <div class="time">
-                                            <?php echo L((String) $p->desc); ?>
+                                            <?php echo (String) $p->desc; ?>
                                         </div>
                                     </div>
 

@@ -29,6 +29,7 @@ class WebsetController extends \Auth\Controller\AuthbaseController
             $this->success('保存成功');
         } else
         {
+           
             $this->display();
         }
     }

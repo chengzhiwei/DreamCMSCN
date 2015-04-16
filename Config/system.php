@@ -13,6 +13,7 @@ return array(
     'TMPL_TEMPLATE_SUFFIX' => '.php',
     'TMPL_ENGINE_TYPE' => 'php',
     'ADMIN_THEME' => 'bootstrap',
+    'SITE_THEME' => 'BootStrap',
     'AUTOLOAD_NAMESPACE' => array(
         'Model' => getcwd() . '\Model',
     ),

@@ -13,14 +13,26 @@
 </style>
 <div id="uploader-demo" style="">
     <!--用来存放item-->
-    <div id="fileList" class="uploader-list"></div>
+    <div id="fileList" class="uploader-list">
+        <?php
+        if ($data['content'])
+        {
+            ?>
+            <div id="edit" class="file-item thumbnail">
+                <img src="<?php echo __ROOT__ . '/' . $data['content']; ?>" />
+            </div>
+        <?php }
+        ?>
+
+    </div>
     <div id="filePicker" style="width: 95px; float: left">选择图片</div>
     <a  href='#' id='cropa' ><div class='webuploader-pick' style="float: left">裁剪图片</div></a>
 </div>
 <input type="hidden" value="<?php echo URL('WebUpload/Upload/multiimgupload', '', 'plugin.php'); ?>" id="server" />
-<input type="hidden" value="<?php echo __ROOT__ ?>" id="orgpic" autocomplete='off' />
-
-
+<input type="hidden" value="<?php echo $data['content']; ?>" id="orgpic" autocomplete='off' />
+<input type="hidden" value="<?php echo $data['content']; ?>" id="<?php echo $data['fieldname'] ?>" name="<?php echo $data['fieldname'] ?>" autocomplete='off' />
+<input type="hidden" value="<?php echo $data['fieldname'] ?>" id="thumbname" value="<?php echo $data['fieldname'] ?>" />
+<input type="hidden" value="<?php echo __ROOT__ ?>" id="approot" />
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -30,7 +42,7 @@
             </div>
             <div class="modal-body">
                 <div class="img-container" style=" overflow: hidden; display: block; max-width: 300px; float: left">
-                    <img   src="" />
+                    <img   src="<?php echo $data['content']; ?>" />
                 </div>
 
                 <div style="float:left; margin-left: 30px" >
@@ -95,19 +107,22 @@
         });
         $('#crop').click(function () {
             data = $image.cropper("getData");
-            img=$('#orgpic').val();
+            img = $('#orgpic').val();
             $.ajax({
                 type: 'POST',
-                url: '<?php echo URL('WebUpload/Upload/cropimg','','Plugin.php'); ?>',
-                data: {x: data.x1, y: data.y1, w: data.width, h: data.height, tw: parseInt($('#imgwidth').val()), th: parseInt($('#imgheigth').val()),img:img},
+                url: '<?php echo URL('WebUpload/Upload/cropimg', '', 'Plugin.php'); ?>',
+                data: {x: data.x1, y: data.y1, w: data.width, h: data.height, tw: parseInt($('#imgwidth').val()), th: parseInt($('#imgheigth').val()), img: img},
+                dataType: 'json',
                 success: function (data) {
-                    if(data=='')
+                    if (data.error != '')
                     {
                         alert('发错错误，请重试');
                     }
                     else
                     {
-                        $('.thumbnail').find('img').attr('src',data);
+                        $('.thumbnail').find('img').attr('src', data.pic);
+                        var fieldname = $('#thumbname').val();
+                        $('#' + fieldname).val(data.picpath);
                         $('#myModal').modal('hide');
                     }
                 }

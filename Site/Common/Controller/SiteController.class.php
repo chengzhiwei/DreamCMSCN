@@ -24,24 +24,18 @@ class SiteController extends \Think\Controller
 
     public function SEO()
     {
-        $langinfo = \SiteNowLang();
+        /*$langinfo = \SiteNowLang();
         $seo = array(
             'title' => $langinfo['seotitle'],
             'keyword' => $langinfo['seokeyword'],
             'desc' => $langinfo['seodesc'],
         );
-        $this->assign('seo', $seo);
+        $this->assign('seo', $seo);*/
     }
 
     private function settplpath()
     {
-        $nowlang = \SiteNowLang();
-        $tmpl_path = C('TMPL_PATH') . '/' . C('SITE_APP_NAME') . '/' . $nowlang['tmpl'] . '/';
-        if (!is_dir($tmpl_path))
-        {
-            $tmpl_path = C('TMPL_PATH') . '/' . C('SITE_APP_NAME') . '/Default/';
-        }
-
+        $tmpl_path = C('TMPL_PATH') . '/' . C('SITE_APP_NAME') . '/' . C('SITE_THEME') . '/';
         $this->site_tmpl = $tmpl_path;
         define('TMPL_PATH', $tmpl_path);
         $site_css_path = __ROOT__ . '/' . $tmpl_path . 'Layout/Css/';

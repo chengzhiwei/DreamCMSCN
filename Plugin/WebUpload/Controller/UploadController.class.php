@@ -174,13 +174,21 @@ class UploadController extends \Common\Controller\AdminpluginController
             $pathinfo = pathinfo($img);
             $savepath = $pathinfo['dirname'] . '/' . $pathinfo['filename'] . '_' . I('post.tw') . '_' . I('post.th') . '.' . $pathinfo['extension'];
             $b = $image->crop(I('post.w'), I('post.h'), I('post.x'), I('post.y'), I('post.tw'), I('post.th'))->save($savepath);
+            $data = array();
             if ($b)
             {
-                echo __ROOT__ . '/' . $savepath;
+                $data = array(
+                    'error' => '',
+                    'pic' => __ROOT__ . '/' . $savepath,
+                    'picpath' => $savepath,
+                );
             } else
             {
-                echo '';
+                $data = array(
+                    'error' => 'error',
+                );
             }
+            echo json_encode($data);
         }
     }
 

@@ -79,13 +79,9 @@ class CategoryModel extends \Think\Model\AdvModel
         return $this->where($condition)->find();
     }
 
-    public function selectbylang($lid = '', $menushow = -1)
+    public function selectByShow($menushow = -1)
     {
         $condition = array();
-        if ($lid)
-        {
-            $condition['langid'] = $lid;
-        }
         if ($menushow != -1)
         {
             $condition['menushow'] = $menushow;

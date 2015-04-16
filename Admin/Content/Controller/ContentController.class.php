@@ -19,12 +19,6 @@ class ContentController extends \Auth\Controller\AuthbaseController
 
     public function index()
     {
-        $Category = DD('Category');
-        $catelist = $Category->select();
-        Vendor('Unlimitedclass.Unlimitedclass', '', '.class.php');
-        $unlimitedclass = new \Unlimitedclass();
-        $Category_arr = $unlimitedclass->cateresult($catelist);
-        $this->assign('Category_arr', $Category_arr);
         $Model = DD('Model');
         $Modellist = $Model->selectall();
         $newmodlist = array();
@@ -38,7 +32,6 @@ class ContentController extends \Auth\Controller\AuthbaseController
 
     public function contentlist()
     {
-        C('IS_LAYOUT', false);
 
         //栏目
         $cid = I('get.cid');
@@ -60,10 +53,9 @@ class ContentController extends \Auth\Controller\AuthbaseController
 
     public function add()
     {
-        C('IS_LAYOUT', false);
+
         if (IS_POST)
         {
-
             $data = I('post.');
             $cid = I('post.cid');
             //栏目
@@ -116,7 +108,6 @@ class ContentController extends \Auth\Controller\AuthbaseController
             $catemod = DD('Category');
             $cateinfo = $catemod->find($cid);
             $ModelFieldMod = DD('ModelField');
-            \Org\Helper\IncludeLang::QuickInc('Content/modelfield');
             $Fieldlist = $ModelFieldMod->selFieldByMid($cateinfo['mid']);
             $this->assign('Fieldlist', $Fieldlist);
             $this->display();
@@ -125,10 +116,56 @@ class ContentController extends \Auth\Controller\AuthbaseController
 
     public function edit()
     {
-        C('IS_LAYOUT', false);
+
         if (IS_POST)
         {
-            
+            $data = I('post.');
+            $cid = I('post.cid');
+            $id = I('get.id');
+            //栏目
+            $catemod = DD('Category');
+            $cateinfo = $catemod->find($cid);
+            //模型
+            $modelMod = DD('Model');
+            $modelinfo = $modelMod->findByID($cateinfo['mid']);
+            //模型字段
+            $ModelFieldMod = DD('ModelField');
+            $Fieldlist = $ModelFieldMod->selFieldByMid($cateinfo['mid']);
+
+            $contentmod = DD('Content', array($modelinfo['table']));
+            //检查过滤数据
+            $data = $contentmod->ChkAndFilter($data, $Fieldlist);
+            if ($data === false)
+            {
+                return false;
+            }
+
+            //主表
+            $contentmod->startTrans();
+            $editcontent = $contentmod->editData($data, $id);
+
+            //副表
+            $contentDatamod = DD('ContentData', array($modelinfo['table'] . '_data'));
+            $editcontentdata = $contentDatamod->editData($data, $id);
+
+            //推荐位
+            $addpostion = true;
+            $posdataMod = DD('PositionData');
+            $posdataMod->deldatabyaid($id);
+            if (I('post.position'))
+            {
+                $addpostion = $posdataMod->addallposition(I('post.position'), $id, $cateinfo['mid'], $cid);
+            }
+            //事务回滚
+            if ($editcontent!==false && $editcontentdata!==false && $addpostion!==false)
+            {
+                $contentmod->commit();
+                $this->redirect('Content/Content/contentlist', array('mid' => $cateinfo['mid'], 'cid' => $cid));
+            } else
+            {
+                $contentmod->rollback();
+                echo 'err';
+            }
         } else
         {
             $cid = I('get.cid');
@@ -138,7 +175,6 @@ class ContentController extends \Auth\Controller\AuthbaseController
 
             //表单
             $ModelFieldMod = DD('ModelField');
-            \Org\Helper\IncludeLang::QuickInc('Content/modelfield');
             $Fieldlist = $ModelFieldMod->selFieldByMid($cateinfo['mid']);
             $this->assign('Fieldlist', $Fieldlist);
 
@@ -190,7 +226,7 @@ class ContentController extends \Auth\Controller\AuthbaseController
             }
         } else
         {
-            C('IS_LAYOUT', false);
+
             $this->assign('pageinfo', $pageinfo);
             $this->display();
         }

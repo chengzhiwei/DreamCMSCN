@@ -68,13 +68,33 @@ class ContentModel extends ContentBaseModel
         return $this->where($condition)->find();
     }
 
-    
     public function SimpleLimit($cid, $limit)
     {
         $condition = array(
             'cid' => $cid,
         );
         return $this->where($condition)->limit($limit)->select();
+    }
+
+    /**
+     * 修改数据
+     * @param array $data
+     * @param int $id
+     */
+    public function editData($data, $id)
+    {
+        if (!$data)
+        {
+            $data = I('post.');
+        }
+        if ($this->create($data, 2))
+        {
+            $condition = array('id' => $id);
+            return $this->where($condition)->save();
+        } else
+        {
+            return false;
+        }
     }
 
 }

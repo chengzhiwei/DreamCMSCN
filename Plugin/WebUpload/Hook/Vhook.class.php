@@ -16,9 +16,10 @@ class Vhook extends \Common\Controller\SitevhookController
     {
         $this->display('multifileupload');
     }
-    
-    public function thumbupload()
+
+    public function thumbupload($arr = array())
     {
+        $this->assign('data', $arr);
         $this->display('thumbupload');
     }
 

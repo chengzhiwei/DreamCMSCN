@@ -1,0 +1,232 @@
+[ 2015-04-16T10:54:31+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/pluginlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' D:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'pluginlist' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Model\PluginModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\xampp\htdocs\DreamCMSCN\Model\PluginModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ur7_plugin` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `ur7_plugin`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:55:53+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/pluginlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' D:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Model\PluginModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\xampp\htdocs\DreamCMSCN\Model\PluginModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ur7_plugin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ur7_plugin`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:57:04+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/pluginlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' D:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Model\PluginModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\xampp\htdocs\DreamCMSCN\Model\PluginModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ur7_plugin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ur7_plugin`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:58:39+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/pluginlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' D:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Model\PluginModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\xampp\htdocs\DreamCMSCN\Model\PluginModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ur7_plugin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_plugin`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:58:41+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/pluginlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' D:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Model\PluginModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\xampp\htdocs\DreamCMSCN\Model\PluginModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ur7_plugin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_plugin`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:58:41+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/pluginlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' D:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0060s ]
+NOTIC: [2048] Declaration of Model\PluginModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\xampp\htdocs\DreamCMSCN\Model\PluginModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ur7_plugin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ur7_plugin`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:58:41+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/pluginlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' D:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0280s ]
+NOTIC: [2048] Declaration of Model\PluginModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\xampp\htdocs\DreamCMSCN\Model\PluginModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ur7_plugin` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ur7_plugin`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr D:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

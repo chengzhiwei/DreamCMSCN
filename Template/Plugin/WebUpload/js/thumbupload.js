@@ -20,6 +20,10 @@ $(function () {
     });
 
     uploader.on('fileQueued', function (file) {
+        if($('#edit').length>0)
+        {
+            $('#edit').remove();
+        }
         filename = file.name;
         var index1 = filename.lastIndexOf(".");
         var index2 = filename.length;
@@ -66,7 +70,9 @@ $(function () {
 
 // 文件上传成功，给item添加成功class, 用样式标记上传成功。
     uploader.on('uploadSuccess', function (file, ret) {
-        $('#orgpic').val($('#orgpic').val()+'/'+ret.result.imgpath);
+        var fieldname = $('#thumbname').val();
+        $('#' + fieldname).val( ret.result.imgpath);
+        $('#orgpic').val($('#approot').val() + '/' + ret.result.imgpath);
         $(".img-container").find('img').attr('src', $('#orgpic').val());
         $('#' + file.id).addClass('upload-state-done');
     });

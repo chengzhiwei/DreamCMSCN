@@ -262,13 +262,13 @@ function nowcate($id, $class)
 }
 
 //所有菜单 只含有显示部分
-function allmenu($lid)
+function allmenu()
 {
 
-    if (!S('menu_' . $lid))
+    if (!S('menu'))
     {
         $Category = DD('Category');
-        $result = $Category->selectbylang($lid,1);
+        $result = $Category->selectByShow(1);
         foreach ($result as $key => $v)
         {
             if ($v['type'] == 1)
@@ -293,10 +293,10 @@ function allmenu($lid)
             $result[$key] = $v;
         }
 
-        S('menu_' . $lid, $result);
+        S('menu', $result);
     } else
     {
-        $result = S('menu_' . $lid);
+        $result = S('menu');
     }
     return $result;
 }
@@ -336,9 +336,7 @@ function findChild(&$arr, $id)
 //获取栏目
 function getmenu($pid = 0)
 {
-    $nowlang = SiteNowLang();
-    $lid = $nowlang['id'];
-    if (!S('menu_' . $lid . '_' . $pid))
+    if (!S('menu_' . $pid))
     {
         $res = allmenu($lid);
         $menu = build_tree($res, $pid);

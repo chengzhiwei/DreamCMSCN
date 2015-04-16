@@ -47,7 +47,7 @@ class TMP
     }
 
     /**
-     * 文章列表 一个语言只能有一个分类
+     * 文章列表 
      * @param int $cid 分类
      * @param int $limit limit
      * @param string $sidetable 是否查询附表
@@ -60,15 +60,8 @@ class TMP
         $contentdata = self::QCREADCACHE('SIMPLEARTICLES_' . $cid);
         if (!$contentdata)
         {
-            $cids_arr = self::CIDBYLANG($cid);
-            if (!$cids_arr)
-            {
-                return array();
-            }
-            $cid = $cids_arr[0];
             $Category = DD('Category');
             $cateinfo = $Category->findbyid($cid);
-
             $model = DD('Model');
             $modelinfo = $model->findByID($cateinfo['mid']);
             $content = DD('Content', array($modelinfo['table']));
@@ -80,7 +73,7 @@ class TMP
             {
                 $ids.=$c['id'] . ',';
                 $newcontentinfo[$c['id']] = $c;
-                $newcontentinfo[$c['id']]['href'] = Route::CUrl('Content/Content/news', array('id' => $c['id'],'cid'=>$cid));
+                $newcontentinfo[$c['id']]['href'] = Route::CUrl('Content/Content/news', array('id' => $c['id'], 'cid' => $cid));
             }
             if ($sidetable == 1)
             {
@@ -119,32 +112,6 @@ class TMP
         
     }
 
-    /**
-     * 解析属于当前语言的分类
-     * @param string $cid
-     * @return array
-     */
-    private static function CIDBYLANG($cids)
-    {
-
-        $nowlang = \SiteDftLang();
-        $category = DD('Category');
-        $cateinfo = $category->selectbylang($nowlang['id']);
-        $langcid = array();
-        foreach ($cateinfo as $k => $c)
-        {
-            $langcid[] = $c['id'];
-        }
-        if (!is_array($cids))
-        {
-            $cids = explode(',', $cids);
-        }
-        if (!$cids)
-        {
-            return array();
-        }
-        return array_values(array_intersect($langcid, $cids));
-    }
 
     /**
      * 快速获取单页面内容 只支持一个
@@ -179,8 +146,6 @@ class TMP
      */
     private static function QCWRITECACHE($key, $val, $cache)
     {
-        $nowlang = \SiteDftLang();
-        $key = $key . '_' . $nowlang['id'];
         S($key, $val, $cache);
     }
 
@@ -191,8 +156,6 @@ class TMP
      */
     private static function QCREADCACHE($key)
     {
-        $nowlang = \SiteDftLang();
-        $key = $key . '_' . $nowlang['id'];
         return S($key);
     }
 

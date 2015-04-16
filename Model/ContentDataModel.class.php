@@ -55,6 +55,30 @@ class ContentDataModel extends ContentBaseModel
     }
 
     /**
+     * 修改数据
+     * @param array $data
+     * @param int $id
+     * @return boolean
+     */
+    public function editData($data, $aid)
+    {
+        if (!$this->isexitTable())
+        {
+            return true;
+        }
+        if (!$data)
+        {
+            $data = I('post.');
+        }
+        if ($this->create($data, 2))
+        {
+            $condition=array('aid'=>$aid);
+            return $this->where($condition)->save();
+        }
+        return false;
+    }
+
+    /**
      * 检查是否存在副表
      * @return boolean
      */

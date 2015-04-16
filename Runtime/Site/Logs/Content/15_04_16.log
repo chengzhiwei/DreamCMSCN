@@ -1,0 +1,410 @@
+[ 2015-04-16T08:51:15+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Admin/bootstrap/Layout/Js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载控制器:Template
+
+[ 2015-04-16T08:51:33+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Admin/bootstrap/Layout/Js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Template
+
+[ 2015-04-16T10:54:32+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Plugin/Test/Res/thumb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-04-16T10:54:32+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Plugin/Test/Res/thumb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:55:53+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Plugin/Test/Res/thumb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:57:04+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Plugin/Test/Res/thumb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:58:40+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Plugin/Test/Res/thumb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:58:41+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Plugin/Test/Res/thumb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T10:58:41+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Plugin/Test/Res/thumb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:10:04+08:00 ] 127.0.0.1 /DreamCMSCN/Uploads/Content/2015-04-16/DreamCMS_19j0iraplhmf17gl10iq1tr5obh4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:17:39+08:00 ] 127.0.0.1 /DreamCMSCN/Uploads/Content/2015-04-16/DreamCMS_19j0iraplhmf17gl10iq1tr5obh4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:17:40+08:00 ] 127.0.0.1 /DreamCMSCN/Uploads/Content/2015-04-16/DreamCMS_19j0iraplhmf17gl10iq1tr5obh4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:18:35+08:00 ] 127.0.0.1 /DreamCMSCN/Uploads/Content/2015-04-16/DreamCMS_19j0iraplhmf17gl10iq1tr5obh4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-04-16T16:18:36+08:00 ] 127.0.0.1 /DreamCMSCN/Uploads/Content/2015-04-16/DreamCMS_19j0iraplhmf17gl10iq1tr5obh4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:37:19+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-04-16T16:39:40+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+
+[ 2015-04-16T16:39:41+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+
+[ 2015-04-16T16:39:41+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+
+[ 2015-04-16T16:39:41+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+
+[ 2015-04-16T16:39:41+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+
+[ 2015-04-16T16:39:42+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+
+[ 2015-04-16T16:39:42+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+
+[ 2015-04-16T16:39:42+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+
+[ 2015-04-16T16:39:42+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+
+[ 2015-04-16T16:39:42+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+
+[ 2015-04-16T16:40:32+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 341 行.
+SQL: SHOW COLUMNS FROM `ur7_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_category` WHERE `menushow` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 343 行.
+SQL: SHOW COLUMNS FROM `ur7_language` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `ur7_language`  [ RunTime:0.0010s ]
+
+[ 2015-04-16T16:42:59+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 341 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 343 行.
+
+[ 2015-04-16T16:43:00+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 341 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 343 行.
+
+[ 2015-04-16T16:43:00+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 341 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 343 行.
+
+[ 2015-04-16T16:43:01+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 341 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 343 行.
+
+[ 2015-04-16T16:43:01+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 341 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 343 行.
+
+[ 2015-04-16T16:43:01+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 341 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 343 行.
+
+[ 2015-04-16T16:43:01+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 341 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 343 行.
+
+[ 2015-04-16T16:43:01+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 341 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 343 行.
+
+[ 2015-04-16T16:43:19+08:00 ] 127.0.0.1 /DreamCMSCN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: nowlang D:\xampp\htdocs\DreamCMSCN\Site\Common\Controller\SiteController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 341 行.
+NOTIC: [8] Undefined variable: lid D:\xampp\htdocs\DreamCMSCN\Site\Common\Common\function.php 第 343 行.
+SQL: SHOW COLUMNS FROM `ur7_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ur7_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ur7_page` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_page` WHERE `cid` = 10 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for Org\Helper\TMP::QCWRITECACHE(), called in D:\xampp\htdocs\DreamCMSCN\Core\Library\Org\Helper\TMP.class.php on line 169 and defined D:\xampp\htdocs\DreamCMSCN\Core\Library\Org\Helper\TMP.class.php 第 179 行.
+NOTIC: [8] Undefined variable: cache D:\xampp\htdocs\DreamCMSCN\Core\Library\Org\Helper\TMP.class.php 第 181 行.
+SQL: SELECT * FROM `ur7_category`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_page` WHERE `cid` = 11 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for Org\Helper\TMP::QCWRITECACHE(), called in D:\xampp\htdocs\DreamCMSCN\Core\Library\Org\Helper\TMP.class.php on line 169 and defined D:\xampp\htdocs\DreamCMSCN\Core\Library\Org\Helper\TMP.class.php 第 179 行.
+NOTIC: [8] Undefined variable: cache D:\xampp\htdocs\DreamCMSCN\Core\Library\Org\Helper\TMP.class.php 第 181 行.
+SQL: SELECT * FROM `ur7_category`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_page` WHERE `cid` = 12 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for Org\Helper\TMP::QCWRITECACHE(), called in D:\xampp\htdocs\DreamCMSCN\Core\Library\Org\Helper\TMP.class.php on line 169 and defined D:\xampp\htdocs\DreamCMSCN\Core\Library\Org\Helper\TMP.class.php 第 179 行.
+NOTIC: [8] Undefined variable: cache D:\xampp\htdocs\DreamCMSCN\Core\Library\Org\Helper\TMP.class.php 第 181 行.
+NOTIC: [8] Use of undefined constant JS_PATH - assumed 'JS_PATH' D:\xampp\htdocs\DreamCMSCN\Template\Site\BootStrap\Layout\footer.php 第 57 行.
+NOTIC: [8] Use of undefined constant JS_PATH - assumed 'JS_PATH' D:\xampp\htdocs\DreamCMSCN\Template\Site\BootStrap\Layout\footer.php 第 58 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-04-16T16:43:19+08:00 ] 127.0.0.1 /DreamCMSCN/JS_PATHbootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+ERR: 无法加载控制器:JS_PATHbootstrap.min.js
+
+[ 2015-04-16T16:43:19+08:00 ] 127.0.0.1 /DreamCMSCN/JS_PATHjquery-1.8.2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:JS_PATHjquery-1.8.2.min.js
+
+[ 2015-04-16T16:43:19+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Site/bootstrap/Layout/img/pattern.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:43:19+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Site/bootstrap/Layout/img/social-icons/pinterest.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:43:19+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Site/bootstrap/Layout/img/social-icons/twitter.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026003s ]
+
+[ 2015-04-16T16:43:19+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Site/bootstrap/Layout/img/social-icons/facebook.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:43:19+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Site/bootstrap/Layout/img/social-icons/dribbble.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-04-16T16:43:19+08:00 ] 127.0.0.1 /DreamCMSCN/JS_PATHbootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载控制器:JS_PATHbootstrap.min.js
+

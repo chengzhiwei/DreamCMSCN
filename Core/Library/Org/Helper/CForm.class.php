@@ -29,11 +29,10 @@ class CForm
         //调用插件
         if (self::$_fieldrow['plugin'])
         {
-            return Vhook(self::$_fieldrow['plugin'],self::$_fieldrow);
-            
+            return Vhook(self::$_fieldrow['plugin'], self::$_fieldrow);
         } else
         {
-            
+
             $methor = self::$_fieldrow['type'];
             $element = method_exists(__CLASS__, $methor) === true ? self::$methor() : '';
         }
@@ -49,7 +48,7 @@ class CForm
     public static function text()
     {
         $fieldname = self::$_fieldrow['fieldname'];
-        return '<input type="text" name="' . $fieldname . '" id="' . $fieldname . '" ' . self::$_fieldrow['tackattr'] . '  />';
+        return '<input type="text" name="' . $fieldname . '" id="' . $fieldname . '" ' . self::$_fieldrow['tackattr'] . ' value="' . self::$_fieldrow['content'] . '"  />';
     }
 
     /**
@@ -59,7 +58,7 @@ class CForm
     public static function textarea()
     {
         $fieldname = self::$_fieldrow['fieldname'];
-        return '<textarea style="width:100%" name="' . $fieldname . '" id="' . $fieldname . '" ' . self::$_fieldrow['tackattr'] . '></textarea>';
+        return '<textarea style="width:100%" name="' . $fieldname . '" id="' . $fieldname . '" ' . self::$_fieldrow['tackattr'] . '>' . self::$_fieldrow['content'] . '</textarea>';
     }
 
     /**
@@ -70,9 +69,12 @@ class CForm
         $PositionMod = DD('Position');
         $plist = $PositionMod->select();
         $chk = '';
+        $content = explode(',', self::$_fieldrow['content']);
         foreach ($plist as $k => $p)
         {
-            $chk.='<input type="checkbox" autocomplete="off" value="' . $p['id'] . '" class="chkall ace" name="position[]"><span class="lbl">' . $p['title'] . '</span> ';
+            $isck = in_array($p['id'], $content) ? "checked" : "";
+            $chk.='<input type="checkbox" autocomplete="off" value="' . $p['id'] . '" '.$isck.'  class="chkall ace" name="position[]">'
+                    . '<span class="lbl">' . $p['title'] . '</span> ';
         }
         return $chk;
     }
@@ -87,7 +89,7 @@ class CForm
             $val_arr = explode(',', $v);
             $is_chk = isset($val_arr[2]) && $val_arr[2] == 1 ? 'checked="checked"' : "";
             $radios.='<label>
-                            <input  autocomplete="off"  type="radio" ' . $is_chk . ' name="'.self::$_fieldrow['fieldname'].'" value="' . $val_arr[1] . '">
+                            <input  autocomplete="off"  type="radio" ' . $is_chk . ' name="' . self::$_fieldrow['fieldname'] . '" value="' . $val_arr[1] . '">
                             <span class="lbl"> ' . $val_arr[0] . '</span>
                       </label>';
         }
@@ -104,21 +106,21 @@ class CForm
             $val_arr = explode(',', $v);
             $is_chk = isset($val_arr[2]) && $val_arr[2] == 1 ? 'checked="checked"' : "";
             $checkboxs.='<label>
-                            <input autocomplete="off"  type="checkbox" ' . $is_chk . ' name="'.self::$_fieldrow['fieldname'].'" value="' . $val_arr[1] . '">
+                            <input autocomplete="off"  type="checkbox" ' . $is_chk . ' name="' . self::$_fieldrow['fieldname'] . '" value="' . $val_arr[1] . '">
                             <span class="lbl"> ' . $val_arr[0] . '</span>
                       </label>';
         }
         return $checkboxs;
     }
-    
+
     public static function cate()
     {
-        if(I('get.cid'))
+        if (I('get.cid'))
         {
-            $category=DD('Category');
-            $cateinfo=$category->findbyid(I('get.cid'));
-            return $catefield='<lable>'.$cateinfo['title'].'</lable>'.
-                    "<input type=hidden name='".self::$_fieldrow['fieldname']."' id='".self::$_fieldrow['fieldname']."' value='".$cateinfo['id']."' />";
+            $category = DD('Category');
+            $cateinfo = $category->findbyid(I('get.cid'));
+            return $catefield = '<lable>' . $cateinfo['title'] . '</lable>' .
+                    "<input type=hidden name='" . self::$_fieldrow['fieldname'] . "' id='" . self::$_fieldrow['fieldname'] . "' value='" . $cateinfo['id'] . "' />";
         }
     }
 
