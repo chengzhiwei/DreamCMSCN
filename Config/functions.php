@@ -30,6 +30,18 @@ function DD($model, $arg = array())
 
 function URL($url = '', $vars = '', $app = '', $suffix = true, $domain = false)
 {
+    switch ($app)
+    {
+        case \Model\Enum\AppEnum::PLUGIN:
+            $app = C('PLG_ENTER_FILE');
+            break;
+        case \Model\Enum\AppEnum::ADMIN:
+            $app = C('ADMIN_ENTER_FILE');
+            break;
+        case \Model\Enum\AppEnum::SITE:
+            $app = C('SITE_ENTER_FILE');
+            break;
+    }
     // 解析URL
     $info = parse_url($url);
     $url = !empty($info['path']) ? $info['path'] : ACTION_NAME;

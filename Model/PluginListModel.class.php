@@ -14,7 +14,7 @@
 
 namespace Model;
 
-class PluginResModel extends \Think\Model\AdvModel
+class PluginListModel extends \Think\Model\AdvModel
 {
 
     public function addlist($dataList)
@@ -38,7 +38,15 @@ class PluginResModel extends \Think\Model\AdvModel
      */
     public function delbypid($pid)
     {
-        return $this->where(array('pid'=>$pid))->delete();
+        return $this->where(array('pid' => $pid))->delete();
     }
-    
+
+    public function selByPid($pid)
+    {
+        $condition = array(
+            'pid' => $pid,
+        );
+        return $this->where($condition)->select();
+    }
+
 }

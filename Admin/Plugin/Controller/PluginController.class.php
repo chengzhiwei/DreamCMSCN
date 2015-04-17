@@ -115,7 +115,7 @@ class PluginController extends \Auth\Controller\AuthbaseController
                         $control_data = array(
                             'title' => $menu_module, 'cname' => $control,
                             'gid' => $menu_gid, 'cls' => 'icon-resize-full',
-                            'app' => 'plugin.php', 'appname' => $plugin,
+                            'app' => \Model\Enum\AppEnum::PLUGIN, 'appname' => $plugin,
                         );
                         $b = $AdminAuthController->add($control_data);
                         if ($b)
@@ -146,7 +146,7 @@ class PluginController extends \Auth\Controller\AuthbaseController
                     $plugin_data_list[$k] = array(
                         'path' => $plugin . '/' . $path,
                         'js' => (string) $op->res->js, 'css' => (string) $op->res->css,
-                        'acname' => (string) $op->name, 'pid' => $pluginid,
+                        'title' => (string) $op->name, 'pid' => $pluginid,
                     );
                     $k++;
                 }
@@ -163,7 +163,7 @@ class PluginController extends \Auth\Controller\AuthbaseController
                     $plugin_data_list[$k] = array(
                         'path' => $plugin . '/' . $path,
                         'js' => (string) $op->js, 'css' => (string) $op->css,
-                        'acname' => (string) $op->name, 'pid' => $pluginid,
+                        'title' => (string) $op->name, 'pid' => $pluginid,
                     );
                     $k++;
                 }
@@ -171,8 +171,8 @@ class PluginController extends \Auth\Controller\AuthbaseController
         }
 
         //写入插件资源 
-        $PluginRes = DD('PluginRes');
-        $b = $PluginRes->addlist($plugin_data_list);
+        $PluginList = DD('PluginList');
+        $b = $PluginList->addlist($plugin_data_list);
         //写入钩子
         $hooklistdata = array();
         if (isset($pluginfo->vhooks->vhook))//视图钩子
@@ -180,7 +180,7 @@ class PluginController extends \Auth\Controller\AuthbaseController
             foreach ($pluginfo->vhooks->vhook as $vhook)
             {
                 $data = array(
-                    'name' => (string) $vhook->name, 'path' => $plugin . '/' . (string) $vhook->class, 'method' => (string) $vhook->method, 'type' => '1',
+                    'title' => (string) $vhook->name, 'path' => $plugin . '/' . (string) $vhook->class, 'method' => (string) $vhook->method, 'type' => '1',
                     'pid' => $pluginid, 'js' => (string) $vhook->res->js, 'css' => (string) $vhook->res->css,
                 );
                 if ((string) $vhook->hookpos)
@@ -196,7 +196,7 @@ class PluginController extends \Auth\Controller\AuthbaseController
             foreach ($pluginfo->bhooks->bhook as $bhook)
             {
                 $data = array(
-                    'name' => (string) $bhook->name, 'path' => $plugin . '/' . (string) $bhook->class, 'method' => (string) $bhook->method, 'type' => '2',
+                    'title' => (string) $bhook->name, 'path' => $plugin . '/' . (string) $bhook->class, 'method' => (string) $bhook->method, 'type' => '2',
                     'pid' => $pluginid, 'js' => (string) $bhook->res->js, 'css' => (string) $bhook->res->css,
                 );
                 if ((string) $bhook->hookpos)
@@ -228,8 +228,8 @@ class PluginController extends \Auth\Controller\AuthbaseController
         //删除插件信息表
         $delPlugin = $pluginmod->delbyid($pid);
         //删除插件资源表
-        $pluginresmod = DD('PluginRes');
-        $delPluginRes = $pluginresmod->delbypid($pid);
+        $PluginList = DD('PluginList');
+        $delPluginList = $PluginList->delbypid($pid);
 
         //删除插件钩子表
         $hooklistmod = DD('HookList');
@@ -257,7 +257,7 @@ class PluginController extends \Auth\Controller\AuthbaseController
                 $GroupMod->delById($controlInfo['gid']);
             }
         }
-        if ($delPlugin !== false && $delPluginHook !== false && $delPluginRes !== false)
+        if ($delPlugin !== false && $delPluginHook !== false && $delPluginList !== false)
         {
             $install = C('PLG_APP_NAME') . '/' . $file . '/uninstall.sql';
             \Org\Helper\ImportSql::ExecuteSqlFile($install);
@@ -287,6 +287,17 @@ class PluginController extends \Auth\Controller\AuthbaseController
     {
         //处理视图钩子
         $pid = I('post.pid');
+        $HookListMod = DD('HookList');
+        $hooklist = $HookListMod->selbypid($pid);
+        foreach($hooklist as $k=>$v)
+        {
+            $name='hook'.$v['id'].'[]';
+            print_r(I('post.'.$name));
+        }
+        die();
+        $PluginListMod = DD('PluginList');
+        $PluginList=$PluginListMod->selByPid();
+        
         $postvhookids = I('post.vhookids');
         $hooklistMod = DD('HookList');
         $vhooklist = $hooklistMod->selbypid($pid);
@@ -317,15 +328,9 @@ class PluginController extends \Auth\Controller\AuthbaseController
             //插件编号
             $pid = I('post.pid');
 
-            //插件基本信息
-            $pluginMod = DD('Plugin');
-            $plugininfo = $pluginMod->findbyid($pid);
-            //加载语言包
-            \Org\Helper\IncludeLang::IncFloder($plugininfo['filetitle'], 'Plugin');
-
             //获取前台插件
-            $PluginResMod = DD('PluginRes');
-            $siteplugin = $PluginResMod->selByTypePid(1, $pid);
+            $PluginListMod = DD('PluginList');
+            $siteplugin = $PluginListMod->selByTypePid(1, $pid);
             //前台资源
             foreach ($siteplugin as $k => $sp)
             {
@@ -333,7 +338,7 @@ class PluginController extends \Auth\Controller\AuthbaseController
                 $siteplugin[$k]['css'] = explode(',', $sp['css']);
             }
             //获取后台插件
-            $adminplugin = $PluginResMod->selByTypePid(2, $pid);
+            $adminplugin = $PluginListMod->selByTypePid(2, $pid);
             //后台资源
             foreach ($adminplugin as $k => $ap)
             {
@@ -345,10 +350,16 @@ class PluginController extends \Auth\Controller\AuthbaseController
             $vhooklist = $hooklistMod->selbyPidType($pid, 1);
             foreach ($vhooklist as $k => $vh)
             {
-                $vhooklist[$k]['name'] = L($vh['name']);
+                $vhooklist[$k]['js'] = explode(',', $vh['js']);
+                $vhooklist[$k]['css'] = explode(',', $vh['css']);
             }
             //获取业务钩子
             $bhooklist = $hooklistMod->selbyPidType($pid, 2);
+            foreach ($bhooklist as $k => $vh)
+            {
+                $bhooklist[$k]['js'] = explode(',', $vh['js']);
+                $bhooklist[$k]['css'] = explode(',', $vh['css']);
+            }
             $config = array(
                 'siteplugin' => $siteplugin,
                 'adminplugin' => $adminplugin,

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50532
 File Encoding         : 65001
 
-Date: 2015-04-15 17:10:09
+Date: 2015-04-17 17:21:03
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -80,7 +80,7 @@ CREATE TABLE `ur7_admin_auth_action` (
   `action` varchar(50) NOT NULL,
   `isshow` varchar(50) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_admin_auth_action
@@ -116,8 +116,9 @@ INSERT INTO `ur7_admin_auth_action` VALUES ('38', '添加字段', 'admin.php', '
 INSERT INTO `ur7_admin_auth_action` VALUES ('39', '添加管理员', 'admin.php', '4', '6', 'Auth', 'Admin', 'addadmin', '0');
 INSERT INTO `ur7_admin_auth_action` VALUES ('40', '添加分类', 'admin.php', '5', '10', 'Component', 'Ad', 'addtype', '0');
 INSERT INTO `ur7_admin_auth_action` VALUES ('41', '模块管理', 'admin.php', '4', '13', 'Auth', 'Permissions', 'modulelist', '1');
-INSERT INTO `ur7_admin_auth_action` VALUES ('58', '采集列表', 'plugin.php', '5', '22', 'Collection', 'Admin', 'index', '1');
-INSERT INTO `ur7_admin_auth_action` VALUES ('59', '添加采集', 'plugin.php', '5', '22', 'Collection', 'Admin', 'add', '1');
+INSERT INTO `ur7_admin_auth_action` VALUES ('60', '基本设置', 'admin.php', '3', '23', 'System', 'Webset', 'index', '1');
+INSERT INTO `ur7_admin_auth_action` VALUES ('63', '采集列表', '2', '5', '25', 'Collection', 'Admin', 'index', '1');
+INSERT INTO `ur7_admin_auth_action` VALUES ('64', '添加采集', '2', '5', '25', 'Collection', 'Admin', 'add', '1');
 
 -- ----------------------------
 -- Table structure for `ur7_admin_auth_controller`
@@ -132,7 +133,7 @@ CREATE TABLE `ur7_admin_auth_controller` (
   `app` varchar(50) DEFAULT NULL,
   `appname` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_admin_auth_controller
@@ -148,7 +149,8 @@ INSERT INTO `ur7_admin_auth_controller` VALUES ('10', '广告管理', 'Ad', '5',
 INSERT INTO `ur7_admin_auth_controller` VALUES ('12', '插件管理', 'Plugin', '6', 'icon-resize-full', null, null);
 INSERT INTO `ur7_admin_auth_controller` VALUES ('13', '权限管理', 'Permissions', '4', 'icon-eye-close', null, null);
 INSERT INTO `ur7_admin_auth_controller` VALUES ('14', '模型管理', 'Model', '2', 'icon-hdd', null, null);
-INSERT INTO `ur7_admin_auth_controller` VALUES ('22', '采集管理', 'Admin', '5', 'icon-resize-full', 'plugin.php', 'Collection');
+INSERT INTO `ur7_admin_auth_controller` VALUES ('23', '站点设置', 'Webset', '3', 'icon-align-justify', null, null);
+INSERT INTO `ur7_admin_auth_controller` VALUES ('25', '采集模块', 'Admin', '5', 'icon-resize-full', '2', 'Collection');
 
 -- ----------------------------
 -- Table structure for `ur7_admin_auth_group`
@@ -161,7 +163,7 @@ CREATE TABLE `ur7_admin_auth_group` (
   `sort` int(11) NOT NULL DEFAULT '0',
   `app` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_admin_auth_group
@@ -265,7 +267,7 @@ CREATE TABLE `ur7_article` (
   `thumb` varchar(255) DEFAULT NULL,
   `position` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_article
@@ -276,6 +278,7 @@ INSERT INTO `ur7_article` VALUES ('7', '7', '文件目录结构', 'DreamCMS程�
 INSERT INTO `ur7_article` VALUES ('8', '7', '命名规范', 'DreamCMS,命名规范', 'DreamCMS命名规范', null, null);
 INSERT INTO `ur7_article` VALUES ('9', '8', '路由配置', '路由配置', '路由配置', null, null);
 INSERT INTO `ur7_article` VALUES ('10', '8', '数据库配置', '数据库配置', '数据库配置', null, null);
+INSERT INTO `ur7_article` VALUES ('12', '7', 'test1', 'test', 'test', 'Uploads/Content/2015-04-16/DreamCMS_19j0ku21nllgbgm2r4124b7nn4_100_100.jpg', '1,2,4');
 
 -- ----------------------------
 -- Table structure for `ur7_article_data`
@@ -286,7 +289,7 @@ CREATE TABLE `ur7_article_data` (
   `aid` int(11) NOT NULL,
   `content` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_article_data
@@ -297,6 +300,7 @@ INSERT INTO `ur7_article_data` VALUES ('7', '7', '<p>\r\n	<strong>根目录</str
 INSERT INTO `ur7_article_data` VALUES ('8', '8', '<p><span class=\"pln\"></span><span class=\"pun\">类文件需要以.</span><span class=\"kwd\">class</span><span class=\"pun\">.</span><span class=\"pln\">php</span><span class=\"pun\">为后缀（这里是指的</span><span class=\"pln\">phpcms</span><span class=\"pun\">的系统类库文件和模块中的类库文件，第三方引入的不做要求），例如</span><span class=\"pln\">http</span><span class=\"pun\">.</span><span class=\"kwd\">class</span><span class=\"pun\">.</span><span class=\"pln\">php</span><span class=\"pun\">。</span><span class=\"pln\"> </span></p><p><span class=\"pun\">函数文件需要以.</span><span class=\"pln\">func</span><span class=\"pun\">.</span><span class=\"pln\">php</span><span class=\"pun\">为后缀（第三方引入的不做要求），例如</span><span class=\"pln\">mail</span><span class=\"pun\">.</span><span class=\"pln\">func</span><span class=\"pun\">.</span><span class=\"pln\">php</span><span class=\"pun\">。</span></p><p><span class=\"pln\"> </span></p><p><span class=\"pun\">类名和文件名一致，例如</span><span class=\"pln\"> phpcmsapp</span><span class=\"pun\">类的文件命名是</span><span class=\"pln\">phpcmsapp</span><span class=\"pun\">.</span><span class=\"kwd\">class</span><span class=\"pun\">.</span><span class=\"pln\">php</span><span class=\"pun\">。</span></p><p><span class=\"pln\"> </span></p><p><span class=\"pun\">数据模型需要以“数据表名称</span><span class=\"pln\">_model</span><span class=\"pun\">.</span><span class=\"kwd\">class</span><span class=\"pun\">.</span><span class=\"pln\">php</span><span class=\"pun\">”为形式，类名称与文件名必须相同。</span></p><p><br /></p>');
 INSERT INTO `ur7_article_data` VALUES ('9', '9', '<p>路由配置</p>');
 INSERT INTO `ur7_article_data` VALUES ('10', '10', '<p>数据库配置</p>');
+INSERT INTO `ur7_article_data` VALUES ('12', '12', '<p>test<br /></p>');
 
 -- ----------------------------
 -- Table structure for `ur7_category`
@@ -399,7 +403,7 @@ INSERT INTO `ur7_hook` VALUES ('1', '前台文章结尾', 'ARTICLE_AFTER', '0');
 DROP TABLE IF EXISTS `ur7_hook_list`;
 CREATE TABLE `ur7_hook_list` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(200) NOT NULL,
+  `title` varchar(200) NOT NULL,
   `pid` int(11) NOT NULL,
   `hid` int(11) NOT NULL,
   `path` varchar(100) NOT NULL,
@@ -407,17 +411,19 @@ CREATE TABLE `ur7_hook_list` (
   `status` tinyint(4) NOT NULL DEFAULT '1',
   `type` tinyint(4) NOT NULL DEFAULT '1',
   `js` varchar(200) DEFAULT NULL,
-  `css` varchar(200) DEFAULT NULL,
+  `css` varchar(200) CHARACTER SET latin1 DEFAULT NULL,
+  `usejs` varchar(200) DEFAULT NULL,
+  `usecss` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_hook_list
 -- ----------------------------
-INSERT INTO `ur7_hook_list` VALUES ('12', 'PLUGIN_VHOOK_MULTIPICUPLOAD', '26', '0', 'WebUpload/Hook/Vhook', 'multiimgupload', '1', '1', 'jquery.min.js,webuploader.min.js,upload.js', 'webuploader.css,style.css');
-INSERT INTO `ur7_hook_list` VALUES ('13', 'PLUGIN_VHOOK_MULTIFILEUPLOAD', '26', '0', 'WebUpload/Hook/Vhook', 'multifileupload', '1', '1', 'jquery.min.js,webuploader.min.js,filesupload.js', 'webuploader.css,style.css,bootstrap.min.css');
-INSERT INTO `ur7_hook_list` VALUES ('14', 'PLUGIN_VHOOK_THUMBUPLOAD', '26', '0', 'WebUpload/Hook/Vhook', 'thumbupload', '1', '1', 'jquery.min.js,webuploader.min.js,webuploader.min.js', 'webuploader.css,style.css');
-INSERT INTO `ur7_hook_list` VALUES ('15', 'PLUGIN_VHOOK_UEDITOR', '27', '0', 'Ueditor/Hook/Vhook', 'ueditor', '1', '1', 'ueditor.all.min.js,lang/zh-cn/zh-cn.js', '');
+INSERT INTO `ur7_hook_list` VALUES ('12', '多图片上传', '26', '0', 'WebUpload/Hook/Vhook', 'multiimgupload', '1', '1', 'jquery.min.js,webuploader.min.js,upload.js', 'webuploader.css,style.css', 'jquery.min.js,webuploader.min.js,upload.js', 'webuploader.css,style.css');
+INSERT INTO `ur7_hook_list` VALUES ('13', '多文件上传', '26', '0', 'WebUpload/Hook/Vhook', 'multifileupload', '1', '1', 'jquery.min.js,webuploader.min.js,filesupload.js', 'webuploader.css,style.css,bootstrap.min.css', 'jquery.min.js,webuploader.min.js,filesupload.js', 'webuploader.css,style.css,bootstrap.min.css');
+INSERT INTO `ur7_hook_list` VALUES ('14', '多缩略图上传', '26', '0', 'WebUpload/Hook/Vhook', 'thumbupload', '1', '1', 'jquery.min.js,webuploader.min.js,webuploader.min.js', 'webuploader.css,style.css', 'jquery.min.js,webuploader.min.js,webuploader.min.js', 'webuploader.css,style.css');
+INSERT INTO `ur7_hook_list` VALUES ('15', '百度编辑器', '27', '0', 'Ueditor/Hook/Vhook', 'ueditor', '1', '1', 'ueditor.all.min.js,lang/zh-cn/zh-cn.js', '', 'ueditor.all.min.js,lang/zh-cn/zh-cn.js', null);
 
 -- ----------------------------
 -- Table structure for `ur7_language`
@@ -450,7 +456,6 @@ CREATE TABLE `ur7_model` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(50) NOT NULL,
   `table` varchar(50) NOT NULL,
-  `langconf` varchar(100) NOT NULL,
   `issys` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
@@ -458,8 +463,8 @@ CREATE TABLE `ur7_model` (
 -- ----------------------------
 -- Records of ur7_model
 -- ----------------------------
-INSERT INTO `ur7_model` VALUES ('30', '文章', 'article', 'MDL_ARTICLE', '0');
-INSERT INTO `ur7_model` VALUES ('31', '图片', 'photo', 'MDL_PHOTO', '0');
+INSERT INTO `ur7_model` VALUES ('30', '文章', 'article', '0');
+INSERT INTO `ur7_model` VALUES ('31', '图片', 'photo', '0');
 
 -- ----------------------------
 -- Table structure for `ur7_model_field`
@@ -469,7 +474,6 @@ CREATE TABLE `ur7_model_field` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(50) DEFAULT NULL,
   `fieldname` varchar(50) NOT NULL,
-  `langconf` varchar(100) NOT NULL,
   `type` varchar(100) NOT NULL,
   `reg` varchar(200) NOT NULL,
   `fieldvalue` varchar(255) NOT NULL,
@@ -485,20 +489,20 @@ CREATE TABLE `ur7_model_field` (
 -- ----------------------------
 -- Records of ur7_model_field
 -- ----------------------------
-INSERT INTO `ur7_model_field` VALUES ('91', 'TITLE', 'title', 'TITLE', 'text', '', '', '1', 'style=\"width:100%\"', '30', '', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('92', 'KEYWORD', 'keyword', 'KEYWORD', 'text', '', '', '0', 'style=\"width:100%\"', '30', '', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('93', 'DESC', 'desc', 'DESC', 'textarea', '', '', '0', '', '30', '', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('94', 'CATEGORY', 'cid', 'CATEGORY', 'cate', '', '', '0', '', '30', '', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('95', 'THUMB', 'thumb', 'THUMB', '', '', '', '0', '', '30', 'Webupload/Hook/Vhook/thumbupload', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('96', 'CONTENT', 'content', 'CONTENT', 'editor', '', '', '0', '', '30', 'Ueditor/Hook/Vhook/ueditor', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('97', 'POSITION', 'position', 'POSITION', 'position', '', '', '0', '', '30', '', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('98', 'TITLE', 'title', 'TITLE', 'text', '', '', '1', 'style=\"width:100%\"', '31', '', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('99', 'KEYWORD', 'keyword', 'KEYWORD', 'text', '', '', '0', 'style=\"width:100%\"', '31', '', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('100', 'DESC', 'desc', 'DESC', 'textarea', '', '', '0', '', '31', '', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('101', 'CATEGORY', 'cid', 'CATEGORY', 'cate', '', '', '0', '', '31', '', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('102', 'THUMB', 'thumb', 'THUMB', '', '', '', '0', '', '31', 'Webupload/Hook/Vhook/thumbupload', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('103', 'CONTENT', 'content', 'CONTENT', 'editor', '', '', '0', '', '31', 'Ueditor/Hook/Vhook/ueditor', '0', '1');
-INSERT INTO `ur7_model_field` VALUES ('104', 'POSITION', 'position', 'POSITION', 'position', '', '', '0', '', '31', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('91', '标题', 'title', 'text', '', '', '1', 'style=\"width:100%\"', '30', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('92', '关键字', 'keyword', 'text', '', '', '0', 'style=\"width:100%\"', '30', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('93', '描述', 'desc', 'textarea', '', '', '0', '', '30', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('94', '栏目', 'cid', 'cate', '', '', '0', '', '30', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('95', '缩略图', 'thumb', '', '', '', '0', '', '30', 'Webupload/Hook/Vhook/thumbupload', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('96', '内容', 'content', 'editor', '', '', '0', '', '30', 'Ueditor/Hook/Vhook/ueditor', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('97', '推荐位', 'position', 'position', '', '', '0', '', '30', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('98', '标题', 'title', 'text', '', '', '1', 'style=\"width:100%\"', '31', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('99', '关键字', 'keyword', 'text', '', '', '0', 'style=\"width:100%\"', '31', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('100', '描述', 'desc', 'textarea', '', '', '0', '', '31', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('101', '栏目', 'cid', 'cate', '', '', '0', '', '31', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('102', '缩略图', 'thumb', '', '', '', '0', '', '31', 'Webupload/Hook/Vhook/thumbupload', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('103', '内容', 'content', 'editor', '', '', '0', '', '31', 'Ueditor/Hook/Vhook/ueditor', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('104', '推荐位', 'position', 'position', '', '', '0', '', '31', '', '0', '1');
 
 -- ----------------------------
 -- Table structure for `ur7_page`
@@ -581,38 +585,41 @@ CREATE TABLE `ur7_plg_collection` (
 DROP TABLE IF EXISTS `ur7_plugin`;
 CREATE TABLE `ur7_plugin` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `name` varchar(50) NOT NULL,
   `filetitle` varchar(50) NOT NULL,
-  `desc` varchar(200) DEFAULT NULL,
+  `desc` varchar(200) CHARACTER SET latin1 DEFAULT NULL,
   `status` tinyint(4) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_plugin
 -- ----------------------------
-INSERT INTO `ur7_plugin` VALUES ('26', 'PLG_WEBUPLOAD_NAME', 'WebUpload', 'PLG_WEBUPLOAD_DESC', '1');
-INSERT INTO `ur7_plugin` VALUES ('27', 'PLG_UEDITOR_NAME', 'Ueditor', 'PLG_UEDITOR_DESC', '1');
-INSERT INTO `ur7_plugin` VALUES ('40', 'PLG_COLLECTION_NAME', 'Collection', 'PLG_COLLECTION_DESC', '1');
+INSERT INTO `ur7_plugin` VALUES ('26', '文件上传插件', 'WebUpload', 'PLG_WEBUPLOAD_DESC', '1');
+INSERT INTO `ur7_plugin` VALUES ('27', '百度编辑器', 'Ueditor', 'PLG_UEDITOR_DESC', '1');
+INSERT INTO `ur7_plugin` VALUES ('42', '采集插件', 'Collection', '??phpQuery??????????jQuery??????????jQuery????????????????????', '1');
 
 -- ----------------------------
--- Table structure for `ur7_plugin_res`
+-- Table structure for `ur7_plugin_list`
 -- ----------------------------
-DROP TABLE IF EXISTS `ur7_plugin_res`;
-CREATE TABLE `ur7_plugin_res` (
+DROP TABLE IF EXISTS `ur7_plugin_list`;
+CREATE TABLE `ur7_plugin_list` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `path` varchar(100) NOT NULL,
   `js` varchar(200) NOT NULL,
   `css` varchar(200) NOT NULL,
-  `acname` varchar(100) NOT NULL,
+  `title` varchar(100) NOT NULL,
   `pid` int(11) NOT NULL,
   `type` int(11) NOT NULL,
+  `usejs` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of ur7_plugin_res
+-- Records of ur7_plugin_list
 -- ----------------------------
+INSERT INTO `ur7_plugin_list` VALUES ('3', 'Collection/Admin/index', 'fuelux.wizard.min.js,json2.js,json2.js', '', '采集列表', '42', '2', 'fuelux.wizard.min.js,json2.js,json2.js');
+INSERT INTO `ur7_plugin_list` VALUES ('4', 'Collection/Admin/add', 'fuelux.wizard.min.js,json2.js', '', '添加采集', '42', '2', 'json2.js');
 
 -- ----------------------------
 -- Table structure for `ur7_position`
@@ -649,3 +656,6 @@ CREATE TABLE `ur7_position_data` (
 INSERT INTO `ur7_position_data` VALUES ('6', '29', '1', '1');
 INSERT INTO `ur7_position_data` VALUES ('6', '29', '1', '2');
 INSERT INTO `ur7_position_data` VALUES ('6', '29', '1', '4');
+INSERT INTO `ur7_position_data` VALUES ('12', '30', '7', '1');
+INSERT INTO `ur7_position_data` VALUES ('12', '30', '7', '2');
+INSERT INTO `ur7_position_data` VALUES ('12', '30', '7', '4');

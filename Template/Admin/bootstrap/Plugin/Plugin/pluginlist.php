@@ -56,7 +56,7 @@
                                         if (key_exists((string) $p->plugin, $plugin_install))
                                         {
                                             ?>
-                                            <a  class="btn btn-xs btn-warning modal_btn" href="javascript:void(0)" rel="<?php echo $plugin_install[(string) $p->plugin]['id'] ?>"  >
+                                        <a  class="btn btn-xs btn-warning modal_btn" href="javascript:void(0)" title="" rel="<?php echo $plugin_install[(string) $p->plugin]['id'] ?>"  >
                                                 配置
                                             </a>
                                             <a class="btn btn-xs btn-danger" href="javascript:uninstall('<?php echo (string) $p->plugin ?>')">
@@ -115,11 +115,11 @@
                             <div class="widget-toolbar no-border">
                                 <ul id="recent-tab" class="nav nav-tabs">
                                     <li class="active">
-                                        <a href="#task-tab" data-toggle="tab">插件前台</a>
+                                        <a href="#siteplugin" data-toggle="tab">插件前台</a>
                                     </li>
 
                                     <li class="">
-                                        <a href="#member-tab" data-toggle="tab">插件后台</a>
+                                        <a href="#adminplugin" data-toggle="tab">插件后台</a>
                                     </li>
 
                                     <li class="">
@@ -135,138 +135,46 @@
                         <div class="widget-body">
                             <div class="widget-main padding-4">
                                 <div class="tab-content padding-8 overflow-visible">
-                                    <div class="tab-pane active" id="task-tab">
-
-
-
+                                    <div class="tab-pane active" id="siteplugin">
                                         <div class="tabbable tabs-left">
-                                            <ul id="myTab3" class="nav nav-tabs">
-                                                <li  class="active">
-                                                    <a href="#home3" data-toggle="tab">
-                                                        插件首页
-                                                    </a>
-                                                </li>
+                                            <ul id="sitepluginTab" class="nav nav-tabs">
 
-                                                <li class="">
-                                                    <a href="#profile3" data-toggle="tab">
-                                                        插件列表
-                                                    </a>
-                                                </li>
 
 
                                             </ul>
 
-                                            <div class="tab-content">
-                                                <div class="tab-pane active" id="home3">
-                                                    <div><u>JS</u></div>
-                                                    <div>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace " value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace " value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
+                                            <div class="tab-content" id="sitepluginTabinfo">
 
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-
-                                                    </div>
-
-                                                    <div style="clear:both"></div>
-
-                                                    <div><u>CSS</u></div>
-                                                    <div>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                        <lable class="col-sm-4 chk_lbl">
-                                                            <input type="checkbox" txtval="添加文章" class="ace authlist" value="13" name="authlist[]">
-                                                            <span class="lbl">jquery.min.js </span>
-                                                        </lable>
-                                                    </div>
-
-
-
-                                                </div>
-
-                                                <div class="tab-pane" id="profile3">
-                                                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
-                                                    <p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
-                                                </div>
 
 
                                             </div>
                                         </div>
-
-
-
-
                                     </div>
 
-                                    <div class="tab-pane" id="member-tab">
+                                    <div class="tab-pane" id="adminplugin">
+                                        <div class="tabbable tabs-left">
+                                            <ul id="adminpluginTab" class="nav nav-tabs">
 
-                                    </div><!-- member-tab -->
+                                            </ul>
+
+                                            <div class="tab-content" id="adminpluginTabinfo">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="tab-pane" id="vhookpane">
 
-                                        <div class="tabbable ">
+                                        <div class="tabbable tabs-left">
+                                            <ul id="vhookTab" class="nav nav-tabs">
 
+                                            </ul>
+
+                                            <div class="tab-content" id="vhookTabinfo">
+
+
+                                            </div>
                                         </div>
 
 
@@ -274,12 +182,19 @@
 
                                     <div class="tab-pane" id="bhookpane">
 
-                                        <div class="tabbable ">
+                                        <div class="tabbable tabs-left">
+                                            <ul id="bhookTab" class="nav nav-tabs">
 
+                                            </ul>
+
+                                            <div class="tab-content" id="bhookTabinfo">
+
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div><!-- /widget-main -->
+                            </div>
                         </div>
 
                     </div>
@@ -294,6 +209,69 @@
     </div>
 </form>
 <script>
+    function parsePlgConfig(obj, Indextab, showtabid,type)
+    {
+        $('#' + Indextab).html('');
+        $('#' + Indextab + 'info').html('');
+        if (obj === null)
+        {
+            return;
+        }
+
+        var tabli = "";//tab
+        var jscss = '';//jscss
+        $.each(obj, function (i, items) {
+            var active = '';
+            if (i == 0)
+            {
+                active = 'active';
+            }
+            id=items.id;
+            usejs = items.usejs;
+            tabli += '<li  class="' + active + '"><a href="#' + showtabid + 'jscss' + i + '" data-toggle="tab">' + items.title + '</a></li>';
+            jscss += '<div class="tab-pane ' + active + '" id="' + showtabid + 'jscss' + i + '"><div><u>JS</u></div><div>';
+            $.each(items.js, function (i, jsitem) {
+                if (jsitem)
+                {
+                    var checked = '';
+                    if (usejs != null)
+                    {
+                        if (usejs.toString().indexOf(jsitem) > -1) {
+                            checked = 'checked';
+                        }
+                    }
+                    jscss += '<lable class="col-sm-6 chk_lbl">\n\
+                                        <input type="checkbox" ' + checked + ' class="ace-checkbox-2 ace  " value="'+jsitem+'" name="'+type+id+'[]"> \n\
+                                        <span class="lbl">' + jsitem + ' </span>\n\
+                                    </lable>';
+                }
+            });
+            jscss += '</div>';
+
+            jscss += '<div style="clear:both"></div><div><u>CSS</u></div><div>';
+            usecss = items.usecss;
+            $.each(items.css, function (i, cssitem) {
+                if (cssitem)
+                {
+                    var checked = '';
+                    if (usecss != null)
+                    {
+                        if (usecss.toString().indexOf(cssitem) > -1) {
+                            checked = 'checked';
+                        }
+                    }
+                    jscss += '<lable class="col-sm-6 chk_lbl">\n\
+                                        <input type="checkbox" ' + checked + '  class="ace-checkbox-2 ace  " value="'+cssitem+'" name="'+type+id+'[]"> \n\
+                                        <span class="lbl">' + cssitem + ' </span>\n\
+                                    </lable>';
+                }
+            });
+            jscss += '</div></div>';
+        });
+
+        $('#' + Indextab).html(tabli);
+        $('#' + Indextab + 'info').html(jscss);
+    }
 
     $(function () {
         $('.modal_btn').click(function () {
@@ -306,26 +284,21 @@
                 dataType: 'json',
                 success: function (data) {
                     $('#myModal').modal('show');
-                    var str = '<div class="tab-content">';
-                    $.each(data.vhooklist, function (i, item) {
-                        ischk = '';
-                        if (item.status == 1)
-                        {
-                            ischk = 'checked="checked"';
-                        }
-                        str += '<lable class="col-sm-4 chk_lbl">\n\
-                                <input type="checkbox"  ' + ischk + ' value="' + item.id + '"  class="ace ace-checkbox-2" name="vhookids[]">\n\
-                                <span class="lbl">' + item.name + ' </span>\n\
-                                </lable>';
-                    });
-                    str += '</div>';
-                    $('#vhookpane').find('.tabbable').html(str);
+                    /*****************前台插件******************/
+                    parsePlgConfig(data.siteplugin, 'sitepluginTab', 'site','plg');
+                    /*****************后台插件******************/
+                    parsePlgConfig(data.adminplugin, 'adminpluginTab', 'admin','plg');
+                    /*****************视图钩子******************/
+                    parsePlgConfig(data.vhooklist, 'vhookTab', 'vhook','hook');
+                    /*****************业务钩子******************/
+                    parsePlgConfig(data.bhooklist, 'bhookTab', 'bhook','hook');
+                    
                 }
 
             });
         });
         $('.sure_js').click(function () {
-            data = $("#configform").serialize()
+            data = $("#configform").serialize();
             $.ajax({
                 type: 'POST',
                 url: '<?php echo U('Plugin/Plugin/doconfigure'); ?>',
