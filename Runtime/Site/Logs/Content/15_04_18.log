@@ -1,0 +1,25 @@
+[ 2015-04-18T09:43:43+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Admin/bootstrap/Layout/Js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+ERR: 无法加载控制器:Template
+
+[ 2015-04-18T09:43:57+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Plugin/Test/Res/thumb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:50:23+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Plugin/Test/Res/thumb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T10:22:38+08:00 ] 127.0.0.1 /DreamCMSCN/Template/Plugin/Test/Res/thumb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

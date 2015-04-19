@@ -49,4 +49,20 @@ class PluginListModel extends \Think\Model\AdvModel
         return $this->where($condition)->select();
     }
 
+    public function edit($data, $id)
+    {
+        if (!$data)
+        {
+            $data = I('post.');
+        }
+        if ($this->create($data, 2))
+        {
+            $condition = array('id' => $id);
+            return $this->where($condition)->save();
+        } else
+        {
+            return false;
+        }
+    }
+
 }

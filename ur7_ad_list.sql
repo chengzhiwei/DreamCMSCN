@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost
-Source Server Version : 50532
+Source Server         : 127.0.0.1
+Source Server Version : 50620
 Source Host           : localhost:3306
 Source Database       : dreamcmscn
 
 Target Server Type    : MYSQL
-Target Server Version : 50532
+Target Server Version : 50620
 File Encoding         : 65001
 
-Date: 2015-04-17 17:21:03
+Date: 2015-04-19 21:44:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -80,7 +80,7 @@ CREATE TABLE `ur7_admin_auth_action` (
   `action` varchar(50) NOT NULL,
   `isshow` varchar(50) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_admin_auth_action
@@ -133,7 +133,7 @@ CREATE TABLE `ur7_admin_auth_controller` (
   `app` varchar(50) DEFAULT NULL,
   `appname` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_admin_auth_controller
@@ -163,7 +163,7 @@ CREATE TABLE `ur7_admin_auth_group` (
   `sort` int(11) NOT NULL DEFAULT '0',
   `app` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_admin_auth_group
@@ -415,7 +415,7 @@ CREATE TABLE `ur7_hook_list` (
   `usejs` varchar(200) DEFAULT NULL,
   `usecss` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_hook_list
@@ -458,13 +458,14 @@ CREATE TABLE `ur7_model` (
   `table` varchar(50) NOT NULL,
   `issys` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_model
 -- ----------------------------
 INSERT INTO `ur7_model` VALUES ('30', '文章', 'article', '0');
 INSERT INTO `ur7_model` VALUES ('31', '图片', 'photo', '0');
+INSERT INTO `ur7_model` VALUES ('32', '', '', '0');
 
 -- ----------------------------
 -- Table structure for `ur7_model_field`
@@ -484,7 +485,7 @@ CREATE TABLE `ur7_model_field` (
   `sort` int(11) NOT NULL DEFAULT '0',
   `issys` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=112 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_model_field
@@ -503,6 +504,13 @@ INSERT INTO `ur7_model_field` VALUES ('101', '栏目', 'cid', 'cate', '', '', '0
 INSERT INTO `ur7_model_field` VALUES ('102', '缩略图', 'thumb', '', '', '', '0', '', '31', 'Webupload/Hook/Vhook/thumbupload', '0', '1');
 INSERT INTO `ur7_model_field` VALUES ('103', '内容', 'content', 'editor', '', '', '0', '', '31', 'Ueditor/Hook/Vhook/ueditor', '0', '1');
 INSERT INTO `ur7_model_field` VALUES ('104', '推荐位', 'position', 'position', '', '', '0', '', '31', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('105', null, 'title', 'text', '', '', '1', 'style=\"width:100%\"', '32', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('106', null, 'keyword', 'text', '', '', '0', 'style=\"width:100%\"', '32', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('107', null, 'desc', 'textarea', '', '', '0', '', '32', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('108', null, 'cid', 'cate', '', '', '0', '', '32', '', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('109', null, 'thumb', '', '', '', '0', '', '32', 'Webupload/Hook/Vhook/thumbupload', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('110', null, 'content', 'editor', '', '', '0', '', '32', 'Ueditor/Hook/Vhook/ueditor', '0', '1');
+INSERT INTO `ur7_model_field` VALUES ('111', null, 'position', 'position', '', '', '0', '', '32', '', '0', '1');
 
 -- ----------------------------
 -- Table structure for `ur7_page`
@@ -573,7 +581,7 @@ CREATE TABLE `ur7_plg_collection` (
   `listrule` text NOT NULL,
   `pagerule` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_plg_collection
@@ -590,7 +598,7 @@ CREATE TABLE `ur7_plugin` (
   `desc` varchar(200) CHARACTER SET latin1 DEFAULT NULL,
   `status` tinyint(4) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_plugin
@@ -612,14 +620,15 @@ CREATE TABLE `ur7_plugin_list` (
   `pid` int(11) NOT NULL,
   `type` int(11) NOT NULL,
   `usejs` varchar(200) DEFAULT NULL,
+  `usecss` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ur7_plugin_list
 -- ----------------------------
-INSERT INTO `ur7_plugin_list` VALUES ('3', 'Collection/Admin/index', 'fuelux.wizard.min.js,json2.js,json2.js', '', '采集列表', '42', '2', 'fuelux.wizard.min.js,json2.js,json2.js');
-INSERT INTO `ur7_plugin_list` VALUES ('4', 'Collection/Admin/add', 'fuelux.wizard.min.js,json2.js', '', '添加采集', '42', '2', 'json2.js');
+INSERT INTO `ur7_plugin_list` VALUES ('3', 'Collection/Admin/index', 'fuelux.wizard.min.js,json2.js,json2.js', '', '采集列表', '42', '2', 'fuelux.wizard.min.js,json2.js,json2.js', null);
+INSERT INTO `ur7_plugin_list` VALUES ('4', 'Collection/Admin/add', 'fuelux.wizard.min.js,json2.js', '', '添加采集', '42', '2', 'json2.js', null);
 
 -- ----------------------------
 -- Table structure for `ur7_position`

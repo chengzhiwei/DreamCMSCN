@@ -241,7 +241,7 @@
                         }
                     }
                     jscss += '<lable class="col-sm-6 chk_lbl">\n\
-                                        <input type="checkbox" ' + checked + ' class="ace-checkbox-2 ace  " value="'+jsitem+'" name="'+type+id+'[]"> \n\
+                                        <input type="checkbox" ' + checked + ' class="ace-checkbox-2 ace  " value="'+jsitem+'" name="'+type+'js'+id+'[]"> \n\
                                         <span class="lbl">' + jsitem + ' </span>\n\
                                     </lable>';
                 }
@@ -261,7 +261,7 @@
                         }
                     }
                     jscss += '<lable class="col-sm-6 chk_lbl">\n\
-                                        <input type="checkbox" ' + checked + '  class="ace-checkbox-2 ace  " value="'+cssitem+'" name="'+type+id+'[]"> \n\
+                                        <input type="checkbox" ' + checked + '  class="ace-checkbox-2 ace  " value="'+cssitem+'" name="'+type+"css"+id+'[]"> \n\
                                         <span class="lbl">' + cssitem + ' </span>\n\
                                     </lable>';
                 }
@@ -303,9 +303,11 @@
                 type: 'POST',
                 url: '<?php echo U('Plugin/Plugin/doconfigure'); ?>',
                 data: data,
-                dataType: 'json',
                 success: function (result) {
-
+                    if(result!='1')
+                    {
+                        
+                    }$('#myModal').modal('hide');
                 }
             });
         });

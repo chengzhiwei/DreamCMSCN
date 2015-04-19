@@ -1,0 +1,587 @@
+[ 2015-04-18T09:43:57+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/pluginlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Model\PluginModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) F:\xampp\htdocs\DreamCMSCN\Model\PluginModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ur7_plugin` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `ur7_plugin`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:43:59+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/getconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'getconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.1872s ]
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 1 AND `pid` = 42  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 331 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 2 AND `pid` = 42  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.1404s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 42 AND `type` = 1  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 347 行.
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 42 AND `type` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 354 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:44:03+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/getconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'getconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 1 AND `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 331 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 2 AND `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 339 行.
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26 AND `type` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 354 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:49:58+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/doconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'doconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 12 [ RunTime:0.1092s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 13 [ RunTime:0.0468s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 14 [ RunTime:0.0936s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Model\PluginListModel::selByPid(), called in F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php on line 304 and defined F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: pid F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 47 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `pid` = null  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 305 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:50:23+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/pluginlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Model\PluginModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) F:\xampp\htdocs\DreamCMSCN\Model\PluginModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ur7_plugin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_plugin`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:50:25+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/getconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'getconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 1 AND `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 331 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 2 AND `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 339 行.
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26 AND `type` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 354 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:50:49+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/getconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'getconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 1 AND `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 331 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 2 AND `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 339 行.
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26 AND `type` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 354 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:51:24+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/doconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'doconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 12 [ RunTime:0.1248s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 13 [ RunTime:0.1248s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 14 [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Model\PluginListModel::selByPid(), called in F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php on line 304 and defined F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: pid F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 47 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `pid` = null  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 305 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:57:01+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/doconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'doconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 12 [ RunTime:0.2340s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 13 [ RunTime:0.1092s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 14 [ RunTime:0.1404s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Model\PluginListModel::selByPid(), called in F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php on line 304 and defined F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: pid F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 47 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `pid` = null  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 305 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:57:23+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/doconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'doconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 12 [ RunTime:0.1560s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 13 [ RunTime:0.0780s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 297 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`=NULL,`usecss`=NULL WHERE `id` = 14 [ RunTime:0.1872s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Model\PluginListModel::selByPid(), called in F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php on line 305 and defined F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: pid F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 47 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `pid` = null  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 306 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:58:01+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/doconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'doconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26  [ RunTime:0.0000s ]
+SQL: UPDATE `ur7_hook_list` SET `usejs`='jquery.min.js,webuploader.min.js,upload.js',`usecss`='webuploader.css,style.css' WHERE `id` = 12 [ RunTime:0.1560s ]
+SQL: UPDATE `ur7_hook_list` SET `usejs`='jquery.min.js,webuploader.min.js,filesupload.js',`usecss`='webuploader.css,style.css,bootstrap.min.css' WHERE `id` = 13 [ RunTime:0.0936s ]
+SQL: UPDATE `ur7_hook_list` SET `usejs`='jquery.min.js,webuploader.min.js,webuploader.min.js',`usecss`='webuploader.css,style.css' WHERE `id` = 14 [ RunTime:0.0624s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Model\PluginListModel::selByPid(), called in F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php on line 305 and defined F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: pid F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 47 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `pid` = null  [ RunTime:0.0156s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 306 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:58:39+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/getconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'getconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 1 AND `pid` = 27  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 332 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 2 AND `pid` = 27  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 27 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 27 AND `type` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 355 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:58:43+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/doconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'doconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 27  [ RunTime:0.0000s ]
+NOTIC: [2] implode(): Invalid arguments passed F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`='ueditor.all.min.js',`usecss`=NULL WHERE `id` = 15 [ RunTime:0.2184s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Model\PluginListModel::selByPid(), called in F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php on line 305 and defined F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: pid F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 47 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `pid` = null  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 306 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T09:58:50+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/doconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'doconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 27  [ RunTime:0.0000s ]
+NOTIC: [2] implode(): Invalid arguments passed F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 298 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`='ueditor.all.min.js,lang/zh-cn/zh-cn.js',`usecss`=NULL WHERE `id` = 15 [ RunTime:0.1560s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Model\PluginListModel::selByPid(), called in F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php on line 305 and defined F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: pid F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 47 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `pid` = null  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 306 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T10:05:08+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/getconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'getconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 1 AND `pid` = 27  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 349 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 2 AND `pid` = 27  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 357 行.
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 27 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 27 AND `type` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 372 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-18T10:05:14+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/getconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'getconfigure' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 1 AND `pid` = 26  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 349 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 2 AND `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 357 行.
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26 AND `type` = 2  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 372 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-18T10:09:13+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/getconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'getconfigure' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 1 AND `pid` = 26  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 349 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 2 AND `pid` = 26  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 357 行.
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 26 AND `type` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 372 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-18T10:22:38+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/pluginlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Model\PluginModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) F:\xampp\htdocs\DreamCMSCN\Model\PluginModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ur7_plugin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_plugin`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+NOTIC: [8] Undefined variable: p_arr F:\xampp\htdocs\DreamCMSCN\Template\Admin\bootstrap\Plugin\Plugin\pluginlist.php 第 46 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-18T10:22:40+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/getconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'getconfigure' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 1 AND `pid` = 27  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 349 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `type` = 2 AND `pid` = 27  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 357 行.
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 27 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 27 AND `type` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 372 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2015-04-18T10:22:43+08:00 ] 127.0.0.1 /DreamCMSCN/admin.php/Plugin/Plugin/doconfigure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlChkLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Auth\Controller\AuthbaseController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') F:\xampp\htdocs\DreamCMSCN\Admin\Auth\Controller\AuthbaseController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\xampp\htdocs\DreamCMSCN\Admin\Common\Controller\AdminbaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_group` ORDER BY sort  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ur7_admin_auth_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_admin_auth_action` WHERE `group` = 'Plugin' AND `controller` = 'Plugin' AND `action` = 'doconfigure' LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ur7_hook_list` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ur7_hook_list` WHERE `pid` = 27  [ RunTime:0.0000s ]
+NOTIC: [2] implode(): Invalid arguments passed F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 299 行.
+SQL: UPDATE `ur7_hook_list` SET `usejs`='ueditor.all.min.js,lang/zh-cn/zh-cn.js',`usecss`=NULL WHERE `id` = 15 [ RunTime:0.1600s ]
+SQL: SHOW COLUMNS FROM `ur7_plugin_list` [ RunTime:0.0100s ]
+NOTIC: [2] Missing argument 1 for Model\PluginListModel::selByPid(), called in F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php on line 310 and defined F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: pid F:\xampp\htdocs\DreamCMSCN\Model\PluginListModel.class.php 第 47 行.
+SQL: SELECT * FROM `ur7_plugin_list` WHERE `pid` = null  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\DreamCMSCN\Admin\Plugin\Controller\PluginController.class.php 第 311 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

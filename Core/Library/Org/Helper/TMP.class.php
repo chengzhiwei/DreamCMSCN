@@ -112,7 +112,6 @@ class TMP
         
     }
 
-
     /**
      * 快速获取单页面内容 只支持一个
      * @param int $cid 分类ID
@@ -124,16 +123,8 @@ class TMP
         $info = self::QCREADCACHE('SINGLEPAGE_' . $cid);
         if (!$info)
         {
-            $cid_arr = self::CIDBYLANG($cid);
-            if (!$cid_arr)
-            {
-                $info = array();
-            } else
-            {
-
-                $Page = DD('Page');
-                $info = $Page->findbycid($cid_arr[0]);
-            }
+            $Page = DD('Page');
+            $info = $Page->findbycid($cid);
             self::QCWRITECACHE('SINGLEPAGE_' . $cid, $info);
         }
         return $info;

@@ -1,0 +1,3 @@
+<?php
+//000000003600a:3:{i:7;a:8:{s:2:"id";s:1:"7";s:3:"cid";s:1:"7";s:5:"title";s:18:"文件目录结构";s:7:"keyword";s:26:"DreamCMS程序目录结构";s:4:"desc";s:26:"DreamCMS文件目录介绍";s:5:"thumb";N;s:8:"position";N;s:4:"href";s:20:"/DreamCMSCN/news_7_7";}i:8;a:8:{s:2:"id";s:1:"8";s:3:"cid";s:1:"7";s:5:"title";s:12:"命名规范";s:7:"keyword";s:21:"DreamCMS,命名规范";s:4:"desc";s:20:"DreamCMS命名规范";s:5:"thumb";N;s:8:"position";N;s:4:"href";s:20:"/DreamCMSCN/news_7_8";}i:12;a:8:{s:2:"id";s:2:"12";s:3:"cid";s:1:"7";s:5:"title";s:5:"test1";s:7:"keyword";s:4:"test";s:4:"desc";s:4:"test";s:5:"thumb";s:74:"Uploads/Content/2015-04-16/DreamCMS_19j0ku21nllgbgm2r4124b7nn4_100_100.jpg";s:8:"position";s:5:"1,2,4";s:4:"href";s:21:"/DreamCMSCN/news_7_12";}}
+?>

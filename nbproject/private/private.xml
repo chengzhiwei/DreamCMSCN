@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/DreamCMSCN/Model/CategoryModel.class.php</file>
-            <file>file:/D:/xampp/htdocs/DreamCMSCN/Admin/Content/Controller/CategoryController.class.php</file>
-            <file>file:/D:/xampp/htdocs/DreamCMSCN/Admin/Content/Controller/ContentController.class.php</file>
+            <file>file:/F:/xampp/htdocs/DreamCMSCN/Admin/Plugin/Controller/PluginController.class.php</file>
+            <file>file:/F:/xampp/htdocs/DreamCMSCN/Model/PluginListModel.class.php</file>
+            <file>file:/F:/xampp/htdocs/DreamCMSCN/Model/HookListModel.class.php</file>
+            <file>file:/F:/xampp/htdocs/DreamCMSCN/Template/Admin/bootstrap/Plugin/Plugin/pluginlist.php</file>
         </group>
     </open-files>
 </project-private>

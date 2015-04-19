@@ -289,33 +289,47 @@ class PluginController extends \Auth\Controller\AuthbaseController
         $pid = I('post.pid');
         $HookListMod = DD('HookList');
         $hooklist = $HookListMod->selbypid($pid);
-        foreach($hooklist as $k=>$v)
+        $b = true;
+        foreach ($hooklist as $k => $v)
         {
-            $name='hook'.$v['id'].'[]';
-            print_r(I('post.'.$name));
+            $jsname = 'hookjs' . $v['id'];
+            $cssname = 'hookcss' . $v['id'];
+            $data = array(
+                'usejs' => implode(',', I('post.' . $jsname)),
+                'usecss' => implode(',', I('post.' . $cssname)),
+            );
+            $a = $HookListMod->edit($data, $v['id']);
+            if ($a === false)
+            {
+                $b = false;
+                break;
+            }
         }
-        die();
+
         $PluginListMod = DD('PluginList');
-        $PluginList=$PluginListMod->selByPid();
-        
-        $postvhookids = I('post.vhookids');
-        $hooklistMod = DD('HookList');
-        $vhooklist = $hooklistMod->selbypid($pid);
-        $vhookids = array();
-        foreach ($vhooklist as $k => $v)
+        $PluginList = $PluginListMod->selByPid();
+        foreach ($PluginList as $k => $v)
         {
-            $vhookids[] = $v['id'];
+            $jsname = 'plgjs' . $v['id'];
+            $cssname = 'plgcss' . $v['id'];
+            $data = array(
+                'usejs' => implode(',', I('post.' . $jsname)),
+                'usecss' => implode(',', I('post.' . $cssname)),
+            );
+            $a = $PluginListMod->edit($data, $v['id']);
+            if ($a === false)
+            {
+                $b = false;
+                break;
+            }
         }
-        $intersectvhook = array_intersect($postvhookids, $vhookids); //交集
-        $diffvhook = array_diff($vhookids, $postvhookids); //差集
-        $hooklistMod->updateStatusByIds(1, $intersectvhook); //交集启用
-        $hooklistMod->updateStatusByIds(0, $diffvhook); //差集停用
-        //处理业务钩子
-        $postbhookids = I('post.bhookids');
-        $intersectbhook = array_intersect($postbhookids, $vhookids); //交集
-        $diffbhook = array_diff($vhookids, $postbhookids); //差集
-        $hooklistMod->updateStatusByIds(1, $intersectbhook); //交集启用
-        $hooklistMod->updateStatusByIds(0, $diffbhook); //差集停用
+        if ($b)
+        {
+            echo '1';
+        } else
+        {
+            echo '-1';
+        }
     }
 
     /**
